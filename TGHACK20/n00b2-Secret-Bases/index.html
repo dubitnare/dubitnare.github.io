@@ -11,7 +11,7 @@
 
     <title>
         
-          Habit20
+          [TGHACK20_n00b2] Secret Bases - Habit20
         
     </title>
 
@@ -233,112 +233,43 @@ function sidebar_toggle() {
 
         </div>
         <div class="book-content">
-          <div class="book-archive">
-  <!-- Title -->
-  
-    <h1>Archives</h1>
-  
+          <div class="book-post">
+  <h2 id="TGHACK20-n00b2-Secret-Bases">[TGHACK20_n00b2] Secret Bases</h2>
+<p><strong>We managed to extract this secret information from one of Mother’s 64 secret bases before we had to leave Earth. Are you able to decode it?</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">VEcyMHt5b3VfY2FuX25ldmVyX2hhdmVfZW5vdWdoX3NlY3JldF9iYXNlc30&#x3D;</span><br></pre></td></tr></table></figure>
+<p>우리는 지구를 떠나야 하기 전, 어머니의 64개 암호값 중 하나를 간신히 추출했다. 해독할 수 있을까?</p>
+<h2 id="✔-Solution">✔ Solution</h2>
+<p><img src="CyberChef.png" alt></p>
+<p>위 암호값 패턴을 살펴보면 이퀄싸인(=)으로 끝나는 점을 확인할 수 있다. (Padding 문자)</p>
+<p>이는 Base64 Encoding 전형적인 결과값(Output) 특징이므로 Decoding 해주면 된다.</p>
+<p><a href="https://habit20.github.io/CyberChef/">CyberChif Tool</a> 도구를 이용해 레시피 From Base64 를 통해  손쉽게 플래그를 얻을 수 있다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TG20&#123;you_can_never_have_enough_secret_bases&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="✔-What-is-base64">✔ What is base64?</h2>
+<ul>
+<li>Base64 : String → ASCII Binary → 6Bit Cut → Encode</li>
+<li>6Bit Cut : 6비트씩 묶어서 임의의 64개 데이터 값 참조후 치환</li>
+<li>Padding : 6비트씩 묶고 남는 비트 이퀄싸인 (=)</li>
+<li>64개 데이터 : Standard (RFC 4648) → A-Za-z0-9+/=</li>
+</ul>
 
-  
-    <!-- Split post by year -->
-    
-  
-
-  
-      <div class="years">
-          <h2>2020</h2>
-          <ul class="archive-list-item">
-          
-              <li>
-                <span>2020-04-13</span>
-                <a href="/TGHACK20/n00b2-Secret-Bases/">
-                  [TGHACK20_n00b2] Secret Bases
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-04-12</span>
-                <a href="/TGHACK20/n00b1-Number-Trouble/">
-                  [TGHACK20_n00b1] Number Trouble
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-03-31</span>
-                <a href="/KNU-Banking-System-2/">
-                  KNU Banking System 2
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-03-29</span>
-                <a href="/Home/">
-                  Home
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-03-28</span>
-                <a href="/Menu/">
-                  Menu
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-03-28</span>
-                <a href="/hello-world/">
-                  Hello World
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-01-01</span>
-                <a href="/personal/launch-a-new-blog/">
-                  Hello! I opened a Blog
-                </a>
-              </li>
-          
-          </ul>
-      </div>
-  
-      <div class="years">
-          <h2>2019</h2>
-          <ul class="archive-list-item">
-          
-              <li>
-                <span>2019-12-30</span>
-                <a href="/personal/republic-of-korea-air-force/">
-                  Republic of Korea Air Force Diary (A-784)
-                </a>
-              </li>
-          
-          </ul>
-      </div>
-  
-      <div class="years">
-          <h2>2017</h2>
-          <ul class="archive-list-item">
-          
-              <li>
-                <span>2017-10-31</span>
-                <a href="/personal/simple-blockchain-description/">
-                  Simple Blockchain Description
-                </a>
-              </li>
-          
-              <li>
-                <span>2017-07-30</span>
-                <a href="/personal/university-exhibition-2018/">
-                  University Exhibition 2018
-                </a>
-              </li>
-          
-          </ul>
-      </div>
-  
-
-  
 </div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js" repo="habit20/habit20.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
         </div>
       </div>
       <div class="column col-2 hide-lg">
@@ -360,7 +291,7 @@ function sidebar_toggle() {
     <!-- Author title -->
     <div class="author-title">
       <div>Habit20</div>
-      <div></div>
+      <div>2020-04-13</div>
     </div>
   </div>
 

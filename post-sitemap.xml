@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://habit20.github.io/Menu/</loc>
+        <lastmod>2020-04-13T14:26:06.661Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://habit20.github.io/TGHACK20/n00b2-Secret-Bases/</loc>
-        <lastmod>2020-04-13T14:12:12.930Z</lastmod>
+        <lastmod>2020-04-13T14:20:22.547Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,14 +26,6 @@
     <url>
         <loc>https://habit20.github.io/Home/</loc>
         <lastmod>2020-04-13T14:10:30.449Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://habit20.github.io/Menu/</loc>
-        <lastmod>2020-04-13T13:39:12.198Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

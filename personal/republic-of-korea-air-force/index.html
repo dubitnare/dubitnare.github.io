@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png">
+    
+
+    <title>
+        
+          Republic of Korea Air Force Diary (A-784) - Habit20
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-153532664-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/rss2.xml" title="Habit20" type="application/rss+xml">
+</head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>HABIT20</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="Home"><a href="/">Home</a></h1>
+<h2 id="Personal">Personal</h2>
+<ul>
+<li><a href="/personal/launch-a-new-blog">Launch a New blog in 2020</a></li>
+<li><a href="/personal/republic-of-korea-air-force">Republic of Korea Air Force</a></li>
+<li><a href="/personal/simple-blockchain-description/">Simple Blockchain Description</a></li>
+<li><a href="/personal/university-exhibition-2018">University Exhibition 2018</a></li>
+</ul>
+<h1 id="Challenge">Challenge</h1>
+<h2 id="Baekjoon-Online-Judge"><a href="https://www.acmicpc.net" target="_blank" rel="external nofollow noopener noreferrer">Baekjoon Online Judge</a></h2>
+<ul>
+<li>None</li>
+<li>None</li>
+</ul>
+<h2 id="Cryptopals-Set-1-Basics">[Cryptopals] Set 1: Basics</h2>
+<ul>
+<li>Convert hex to base64</li>
+</ul>
+<!--
+- Fixed XOR
+- Single-byte XOR cipher
+- Detect single-character XOR
+- Implement repeating-key XOR
+- Break repeating-key XOR
+- AES in ECB mode
+- Detect AES in ECB mode
+-->
+<!--
+## [Cryptopals] Set 2: Block crypto
+
+- Implement PKCS#7 padding
+- Implement CBC mode
+- An ECB/CBC detection oracle
+- Byte-at-a-time ECB decryption (Simple)
+- ECB cut-and-paste
+- Byte-at-a-time ECB decryption (Harder)
+- PKCS#7 padding validation
+- CBC bitflipping attacks
+
+## [Cryptopals] Set 3: Block & stream crypto
+
+- The CBC padding oracle
+- Implement CTR, the stream cipher mode
+- Break fixed-nonce CTR mode using substitutions
+- Break fixed-nonce CTR statistically
+- Implement the MT19937 Mersenne Twister RNG
+- Crack an MT19937 seed
+- Clone an MT19937 RNG from its output
+- Create the MT19937 stream cipher and break it
+
+## [Cryptopals] Set 4: Stream crypto and randomness
+
+- Break "random access read/write" AES CTR
+- CTR bitflipping
+- Recover the key from CBC with IV=Key
+- Implement a SHA-1 keyed MAC
+- Break a SHA-1 keyed MAC using length extension
+- Break an MD4 keyed MAC using length extension
+- Implement and break HMAC-SHA1 with an artificial timing leak
+- Break HMAC-SHA1 with a slightly less artificial timing leak
+
+## [Cryptopals] Set 5: Diffie-Hellman and friends
+
+- Implement Diffie-Hellman
+- Implement a MITM key-fixing attack on Diffie-Hellman with parameter injection
+- Implement DH with negotiated groups, and break with malicious "g" parameters
+- Implement Secure Remote Password (SRP)
+- Break SRP with a zero key
+- Offline dictionary attack on simplified SRP
+- Implement RSA
+- Implement an E=3 RSA Broadcast attack
+
+## [Cryptopals] Set 6: RSA and DSA
+
+- Implement unpadded message recovery oracle
+- Bleichenbacher's e=3 RSA Attack
+- DSA key recovery from nonce
+- DSA nonce recovery from repeated nonce
+- DSA parameter tampering
+- RSA parity oracle
+- Bleichenbacher's PKCS 1.5 Padding Oracle (Simple Case)
+- Bleichenbacher's PKCS 1.5 Padding Oracle (Complete Case)
+
+## [Cryptopals] Set 7: Hashes
+
+- CBC-MAC Message Forgery
+- Hashing with CBC-MAC
+- Compression Ratio Side-Channel Attacks
+- Iterated Hash Function Multicollisions
+- Kelsey and Schneier's Expandable Messages
+- Kelsey and Kohno's Nostradamus Attack
+- MD4 Collisions
+- RC4 Single-Byte Biases
+-->
+<h1 id="Cature-the-Flag">Cature the Flag</h1>
+<h2 id="TGHACK20-Resolve">TGHACK20 Resolve</h2>
+<ul>
+<li><a href="/TGHACK20/n00b1-Number-Trouble/">[n00b1] Number Trouble</a></li>
+<li>None</li>
+</ul>
+<h1 id="None">None</h1>
+<h2 id="None-v2">None</h2>
+<ul>
+<li>None</li>
+<li>None</li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h2 id="대한민국-공군-전역-이야기-병784기">대한민국 공군 전역 이야기 (병784기)</h2>
+<p>2018년 1월 15일 대한민국 공군 784기 입대 후 2019년 12월 11일 전역까지 이야기를 다뤄본다.</p>
+<h2 id="1-이병-2018-01-15-2018-04-14">1. 이병 (2018.01.15 ~ 2018.04.14)</h2>
+<ul>
+<li>
+<h3 id="경상남도-진주시-공군교육사령부-기본군사훈련단">경상남도 진주시 공군교육사령부 기본군사훈련단</h3>
+</li>
+</ul>
+<p>신병 4대대 3중대 1소대 소속을 받았다. 타대대에 비해 열악하고 노후화된 시설에서 훈련병 생활을 지냈지만 나름 20명 정도 같이 생활해 가장 많은 추억을 쌓을 수 있었다. 이전에는 훈련소 수료까지 6주라는 시간을 버텼지만 19년부터 5주로 바뀐 상태이다. 여기서 각종 훈련을 비롯해 종합시험을 통해 본인의 특기를 지정받는다.</p>
+<p>사실 난 다른 사람보다 컴퓨터를 조금 더 다뤄본 자신감 하나로 입대해 관련 특기를 쉽게 받을 수 있을 것만 같았다. 그러나 현실은 기사 자격증 이상을 지닌 전우가 난무했고 분야별 능력자가 많았다. 그 덕분에 자격증 점수가 밀려 정말 원하는 특기는 놓쳤다. 하지만 지금까지의 군 생활을 되돌아보면 배운 것이 많아 상당히 경이롭다.</p>
+<ul>
+<li>
+<h3 id="특기학교-군수1학교">특기학교 (군수1학교)</h3>
+</li>
+</ul>
+<p>훈련소 수료 후 2박 3일 상당히 짧은 휴가를 경상남도 진주시에서 보냈다. 난 무장정비병 특기를 받은 덕분에 군수 1학교에서 생활했다. 이곳은 훈련병 생활과 비교하면 훈련도 없고 많이 쾌적했다. TV, 음료수 자판기, 간이 BX 등을 이용할 수 있어서 제약적인 부분이 꽤 해소되었다. 교육은 학교와 비슷한 곳에서 폭탄/미사일 장착에 관한 이론 및 실습을 배웠다.</p>
+<p>여기서 4주간 생활하면서 현장에서 일어나는 일을 작게나마 간접적으로 느낄 수 있었다. 여기서 한가지 느낀 점은 내가 생각한 이상적인 군 생활과 점점 멀어지는 듯한 기분을 받았다. 그러나 원하는 자대배치를 받기 위해 열심히 공부한 기억이 남는다. 결국, 최종적으로 나는 충청북도 충주시에 있는 19전투비행단을 배정받았다.</p>
+<ul>
+<li>
+<h3 id="全-장병-급여인상">全 장병 급여인상</h3>
+</li>
+</ul>
+<p><a href="https://www.insight.co.kr/news/257163" target="_blank" rel="external nofollow noopener noreferrer">2020년 사병 월급 오른다···병장 월급 40만원→54만원으로 인상</a></p>
+<p>18년 입대자는 17년 입대자와 비교하면 장병 급여가 약 <strong>50% 가량 대폭 상승</strong>했다. 나는 대한민국 제19대 대통령 선거 당시 현 정부의 공약을 꼼꼼하게 읽어봤는데 군 입대를 앞둔 사람에겐 정말 가치 있는 공약이었다. 이 내용뿐만 아니라 군 복무 단축까지 포함되어 정말 현실로 일어날까에 대한 의문이 들었지만 실제로 복무 중 대부분 이뤄졌고 지속해서 진행 중이다.</p>
+<h2 id="2-일병-2018-04-15-2018-11-14">2. 일병 (2018.04.15 ~ 2018.11.14)</h2>
+<ul>
+<li>
+<h3 id="19전투비행단-자대배치">19전투비행단 자대배치</h3>
+</li>
+</ul>
+<p>처음 자대배치를 받으면 소속 대기 중으로 특정 생활관에서 신병끼리 모여 지낸다. 여기서 다른 특기를 받은 친구도 매우 친해질 수 있었다. 어느 정도 시간이 흐르면 으뜸병사 혹은 행정병 등이 찾아와 나를 데려간다. 그러면 이제 다른 특기 동기와 헤어지고 차량탑승 후 본인 특기소속 생활관으로 이동한다.</p>
+<p>특정 대대 배치 후 간단한 신상명세서를 작성한다. 그냥 열심히 내가 무엇을 잘하고 못하고 부족한 점은 무엇인지 등 상세하게 적어두면 그것에 맞게 생활할 수 있도록 군에서는 온 힘을 다해 도와준다. 이 과정까지 마무리하면 세부적인 소속을 받는다. 여기서부터 진짜로 약 <strong>1년 8개월</strong> 생활하는 곳이다.</p>
+<p>최종적으로 세부적인 소속을 받았다면 생활관 이동 후 간단한 자기소개 후 짐 정리를 한다. 이 과정에서 직속 선임을 처음 만난다. 이후 현장에서 무슨 일을 해야 하는지 배울 수 있고 여러모로 관습이나 생활방식 등을 전달받는다. 어떤 사람을 만나느냐에 따라 군 생활이 조금 다르지만 확실한 것은 본인이 맡은 일을 열심히 수행하면 된다.</p>
+<ul>
+<li>
+<h3 id="중대본부-무장기록병-상·하번">중대본부 무장기록병 상·하번</h3>
+</li>
+</ul>
+<p>무장정비병 특기를 받아 대략 7개월 정도 전투기 근처 현장에서 일했다. 특기학교에서 예상했던 것처럼 외부작업으로 날씨 영향이 가장 컸었다. 여름엔 무지 덥고 겨울엔 무지 춥고… 그리고 기억할 수공구가 꽤 많지만, 열심히 공부하면 금방 습득 가능했다. 처음 격납고 안에서 봤던 전투기 생김새는 평생 잊지 못할 것 같다. 공군 특성상 휴가는 한 달 1번 정도 나갔고 현장 작업 인원을 위해 어느 정도 조율을 하는 편이다.</p>
+<p>가장 힘든 일병 생활이 끝날 때쯤, 선임 무장기록병 전역으로 인해 티오가 나왔다. 평소 컴퓨터를 조금 더 다룬다는 이유 하나와 완만한 이미지 때문인지 기록병 선임께서 상번을 도와줬다. 무장기록병은 선임부사관님과 함께 병사 휴가/교육 관리, 전입 신병 인솔, 환경/시설 보수, 운전 등을 맡았다. 대부분 컴퓨터 작업은 한셀 매크로 스크립트 자동화 작업을 보수해 어려움은 없었다. 나머지 환경/시설은 직접 나가서 선임부사관님과 치우고 고쳤다.</p>
+<p>내가 군 생활 중 가장 많이 남는 것은 <strong>운전경험</strong>이다. 사회에서 운전 자체를 해보지 않았기 때문에 서툴렀지만 전역한 선임에게 열심히 배웠다. 머릿속으로 운전 시뮬레이션을 계속 돌렸고 여러 번 연습해 기지면허증을 취득했다. 이후에도 교육/훈련/전달 등을 위해 운전할 수 있는 경험이 수두룩했다. 지금 와서 되돌아보면 지난 운전 연습을 도와준 선임께 감사하다.</p>
+<ul>
+<li>
+<h3 id="또래상담병사-생활관장">또래상담병사 &amp; 생활관장</h3>
+</li>
+</ul>
+<p>무장기록병 상번과 동시에 또래상담병사 티오가 나왔다. 원래 상번하기 결정 난 병사 하나가 있었는데 특정 사유 때문에 상번하지 못했다. 그래서 우연히 기회가 나한테 왔고 급하게 상번하게 되었다. 생각지도 못한 기회라서 당황스러웠지만, 최대한 새로 들어온 후임 처지에서 생각해보고 어색하지 않도록 노력했었다.</p>
+<p>중간중간 군 생활을 적응 못 하거나 특기 때문에 고생하는 친구도 꽤 있었지만, 그때마다 격려와 칭찬을 통해서 본인의 강점을 존중했고 일으켜 세웠다. 이 활동을 하면서 사람마다 다른 점은 분명히 존재한다는 것을 느낄 수 있었고 상황에 맞게 대처할 능력을 키울 수 있었다. 여기서 가장 중요한 점은 편견 없이 서로 대하는 게 가장 중요해 보였다.</p>
+<p>다시 이 활동을 돌아보면 모두에게 &quot;조금 더 잘해줄 수 있었을 텐데&quot;라는 아쉬움 하나가 남는다. 나를 포함해 상대 처지를 생각하는 것은 정말 어렵고 중요한 일이다. 근데 가끔 상대방을 고려하지 않고 행동한 점이 있어서 많이 안타깝다. 그래서 지금은 최대한 상대방 입장을 고려하고 올바른 행동을 실천하도록 노력한다.</p>
+<h2 id="3-상병-2018-11-15-2019-06-14">3. 상병 (2018.11.15 ~ 2019.06.14)</h2>
+<ul>
+<li>
+<h3 id="사무실-책상·의자-교체">사무실 책상·의자 교체</h3>
+</li>
+</ul>
+<p>이 업무는 상당히 고된 작업이었다. 무장기록병 상번한지 얼마 되지 않아 모든 사무실의 노후화된 책상·의자를 다 함께 교체했다. 이 과정에서 컴퓨터 인트라넷 연결까지 전부 다시 했고 간단한 군 내부망 구조파악, 랜툴세트, 각종 케이블 등을 많이 다뤘다. 여기서 가장 인상 깊었던 점 하나는 수많은 책상·의자 교체 후  철재·목재·플라스틱 모두 따로 분해한 다음 폐기 처분해 버린 점이 가장 힘들었고 기억에 남는다.</p>
+<ul>
+<li>
+<h3 id="兵-군-복무-단축-실시">兵 군 복무 단축 실시</h3>
+</li>
+</ul>
+<p>18년 3분기쯤 군 복무 단축 관련 문서가 공식보도 되었다. 지금 생각하면 18~19년은 정말 변화를 추구한 한 해가 아닐까 싶다. 보통 모든 부대가 그렇듯 이전 관습을 중시하는 문화가 조금은 남아있었는데 휴대폰 사용 때문인지 거의 없어지는 추세이다. 이는 앞으로 몇 년간 더욱더 개인을 존중하는 문화가 형성되지 않을까 싶다.</p>
+<p>군 복무 단축은 <strong>육군·해군 21 → 18개월, 공군 24 → 22개월</strong> 단축되었다. 나는 대한민국 공군 18년 1월 입대자로서 약 34일 정도 단축되었다. 22개월 모두 줄어든 시점은 19년 1월 입대자부터 60일 단축되었다. 앞으로 2020년 대한민국 공군 입대자는 추가로 1개월 줄어들어 총 21개월 복무할 가능성은 상당히 크다.</p>
+<p>또 장병 급여가 18년 인상 후 19년 동결이었으나 20년부터 다시 급여 인상될 것으로 예상한다. 이 점을 참고해 아직 입대하지 않은 성인 남성은 준비하면 좋을 것 같다. 대한민국 공군은 22개월 전역까지 약 1000만원 가량 모을 수 있었다. 공군 복무 기간 1개월 추가 단축해도 2020년 급여인상까지 생각하면 총금액 변동은 완충 될 것으로 예상한다.</p>
+<ul>
+<li>
+<h3 id="일과-후-兵-휴대폰-사용">일과 후 兵 휴대폰 사용</h3>
+</li>
+</ul>
+<p><a href="https://news.joins.com/article/23601383" target="_blank" rel="external nofollow noopener noreferrer">육군, “휴대전화 사용 허용 후 병사 일탈 줄어”</a></p>
+<p>19년 2월에서 3월경 국방공보에서 “일과 후 병사 휴대폰 사용허용” 관련 내용이 보도되었다. 이후 격오지 부대부터 점차 추진되었다. 이때 당시 설렘 반, 걱정 반으로 “진짜일까?” 라는 모두 같은 마음을 가지고 기다렸다. 우리 부대를 포함해 모든 군부대가 사용한 시기는 아마 3월에서 4월경으로 기억한다.</p>
+<p>난 무장기록병 업무를 보고 있었기 때문에 우리 소속 병사 휴대폰 약 50대 인가시키고 행정처리를 도왔다. 지금은 모든 병사가 일과 후 휴대폰 사용 중인데 없었던 시절과 비교해보면 분위기가 확연히 바뀐 것 같다. 평소보다 사람 간의 대화가 줄어들고 티비 시청 및 움직임이 잦아들었으며 사이버지식정보방 사용자가 대폭 감소하였다.</p>
+<ul>
+<li>
+<h3 id="공군-카페-“휴머니스트”">공군 카페 “휴머니스트”</h3>
+</li>
+</ul>
+<p>대한민국 공군은 타군과 다르게 인트라넷 커뮤니티가 존재한다. 그중에서 휴머니스트는 제일 큰 규모를 자랑한다. 이곳에서 각종 소식을 교류할 수 있으며 자신이 알고 있는 교양·지식을 게시물 정리 후 공유한다. 여기서 나는 컴퓨터·경제·수학 관련 내용을 자주 보면서 간단한 경제이론 그리고 프로그래밍·한셀에 대해 공부했다.</p>
+<p>상대적으로 컴퓨터 다루는 시간이 많은 나는 우연히 카페 매니저님과 함께 여러 게시판 운영을 돕게 되었다. 이에 대한 상세한 내용은 군 특성상 담기 어렵지만, 누군가의 노고 덕분에 좋은 정보를 얻을 수 있다는 것은 확실하다. 휴머니스트는 군 내에서 조금 더 관심을 두면 타군 대비 충분히 가치 있는 기회의 공간으로 보인다.</p>
+<h2 id="4-병장-2019-06-15-2019-12-11">4. 병장 (2019.06.15 ~ 2019.12.11)</h2>
+<ul>
+<li>
+<h3 id="兵-군-계급별-진급-기간-변경">兵 군 계급별 진급 기간 변경</h3>
+</li>
+</ul>
+<p><a href="https://www.hankyung.com/politics/article/201908266869Y" target="_blank" rel="external nofollow noopener noreferrer">이병 2개월-일병·상병 각 6개월 복무하면 진급한다</a></p>
+<p>기존 계급별 진급 기간은 이병 3개월, 일·상병 7개월, 병장 7개월이다. 변경 후 대한민국 공군은 <strong>이병 2개월, 일·상병 6개월, 병장 8개월</strong>이다. 21개월 추가 단축하면 병장은 7개월이다. 이렇게 변경한 큰 이유는 숙련도가 높은 병장 계급을 최대한 활용해 군 전투력 유지인데 급여를 조금 더 받으나 병사 처지에서 현실적으로 더 루즈해 보인다.</p>
+<ul>
+<li>
+<h3 id="한식-중식-치킨">한식, 중식, 치킨 (?)</h3>
+</li>
+</ul>
+<p>이 부분에 대해 상세한 내용을 다룰 수 없으나 3가지 모두 존재한다. 여기서 치킨집은 19년 기준 프랜차이즈 XX큐이다. 따라서 부대 내 이용까지 가능한데 보통 간부님과 동행을 원칙으로 이용한다. 타군에 비하면 무엇이든 접근할 수 있는 폭이 넓고 조금 더 혜택 있는 군 생활이 가능한 곳이 대한민국 공군이다.</p>
+<ul>
+<li>
+<h3 id="KT-기가지니">KT 기가지니</h3>
+</li>
+</ul>
+<p>병사 생활관 티비 **“LG U+” 에서 “KT 기가지니”**로 모두 변경됐다. 따라서 기가지니 음성인식을 통해 티비 전원관리 및 다양한 정보를 실시간으로 얻을 수 있었다. 초반쯤 유튜브 시청까지 가능했지만, 라이브 방송 때문인지 소프트웨어적으로 제한되었다. (단, 기가지니는 업무를 진행하는 곳은 설치되지 않았다.)</p>
+<ul>
+<li>
+<h3 id="푸드트럭">푸드트럭 (???)</h3>
+</li>
+</ul>
+<p>병사의 날, 푸드트럭 행사를 진행하기 위해서는 어느 정도 병사 규모가 있어야 하며 아주 넓은 공간은 필수이다. 이에 적합한 내가 복무한 부대는 5-6대 푸드트럭 외부 차량 인가를 통해 업무로 지친 全 병사의 사기를 높였다. 이는 22개월 군 생활 중 단 한 번 있었던 특별한 경험으로 아직 기억 남는다.</p>
+<ul>
+<li>
+<h3 id="브런치-배식">브런치 배식</h3>
+</li>
+</ul>
+<p>주말 아침·점심 겸으로 브런치 배식까지 추진했었다. 이전과 달리 무엇이든 형식적인 내용 안에서 벗어나는 시도는 기존의 관습을 배제하는데 시너지 효과로 작용할 것으로 보인다. 매일 반복적이고 비슷한 음식을 먹다 보니 이러한 새로움은 병사에게 반갑지 않을까 라는 생각이 든다.</p>
+<ul>
+<li>
+<h3 id="윈도우-10">윈도우 10</h3>
+</li>
+</ul>
+<p><a href="https://news.mt.co.kr/mtview.php?no=2019120614205832168" target="_blank" rel="external nofollow noopener noreferrer">지원 종료 윈도우7 계속 사용해도 되나요?</a></p>
+<p>2014년 하반기쯤 런칭해 나왔고 어느 정도 안정성을 인정받았다. 19년 하반기 모든 부대 내 윈도우 10 도입 중이다. 여기서 변경된 가장 큰 이유는 “2020년 1월 14일, 윈도우 7 기술지원” 종료 때문이다. 이로 인해 보안상 문제를 최소화시키기 위해 향후 몇 년간 노후화된 데스크탑 및 장비까지 교체할 것으로 보인다.</p>
+<ul>
+<li>
+<h3 id="전역식">전역식</h3>
+</li>
+</ul>
+<p><strong>나에게 절대 오지 않을 것 같은 전역 날이 다가왔다.</strong> 모두에게 박수갈채를 받으며 단장님을 비롯해 많은 지휘관님과 악수했다. 그리고 1년 8개월간 정들었던 부대를 나왔는데 상당히 기분이 묘했다. 그간 있었던 고마웠던 점을 모두에게 돌려주지 못했지만 정말 다행히 사고 없이 건강하게 전역했다. 나중에 기회가 된다면 다시 찾아가 고마움을 보답하고 싶다.</p>
+<p>이 글을 통해 19전투비행단 모든 지휘관 또는 주임원사님, 선임부사관님, 선·후임·동기, 클오클 클랜 가족 등에게 모두 고맙다는 말을 전하고 싶다. 인생을 살면서 영원히 까먹지 않도록 최대한 빨리 글을 작성했지만, 혹시나 빠졌거나 부족한 점은 너그럽게 봐줬으면 좋겠다.</p>
+<h2 id="5-마치며">5. 마치며</h2>
+<p>대한민국 군대는 실시간으로 즉각 반응하는 생태계이다. 그 과정에서 매끄럽게 처리되지 못하는 점도 많았지만, 모두 국방의 의무를 위해서 최선을 다해 복무 중이다. 한 명의 실수로 전체가 피해 볼 수 있는 공동체인 만큼 함께 관심 가지면 좋겠다. 만약 사회에서 군인을 만난다면 모두가 반갑게 격려해주면 좋겠다.</p>
+<p>2019년 12월 11일, 대한민국 공군병 784기 전역식을 무사히 마치고 집으로 돌아왔다. 이전부터 내가 기록한 자료부터 프로그램까지 2017년 입대 전 기준이라 2019년으로 모두 업데이트했다. 앞으로 나는 2020년 대학교 복학 준비를 위해 프로그래밍 복습과 동아리 운영계획 등을 꾸준히 준비할 예정이다. 이외에도 목표와 버킷리스트를 탄탄하게 세워 대학교 생활과 미래를 위해 준비하겠다.</p>
+<p>마지막으로 이 글을 읽어준 모든 여러분에게 감사하다. 장문의 글은 오랜만에 작성해 글솜씨가 별로 좋지 않지만 2년을 헛되이 남기지 않기 위해 기억나는 부분을 열심히 작성했다. 만약 더욱더 인상깊었던 내용이 떠오른다면 나중에 추가적으로 게시물 수정 예정이다.</p>
+<p>끝.</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js" repo="habit20/habit20.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/avatar.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Habit20</div>
+      <div>2019-12-30</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-link" href="/tags/Diary/" rel="tag">#Diary</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

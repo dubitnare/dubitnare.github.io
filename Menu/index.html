@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png">
+    
+
+    <title>
+        
+          Menu - Habit20
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-153532664-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/rss2.xml" title="Habit20" type="application/rss+xml">
+</head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>HABIT20</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <h1 id="Home"><a href="/">Home</a></h1>
+<h2 id="Personal">Personal</h2>
+<ul>
+<li><a href="/personal/launch-a-new-blog">Launch a New blog in 2020</a></li>
+<li><a href="/personal/republic-of-korea-air-force">Republic of Korea Air Force</a></li>
+<li><a href="/personal/simple-blockchain-description/">Simple Blockchain Description</a></li>
+<li><a href="/personal/university-exhibition-2018">University Exhibition 2018</a></li>
+</ul>
+<h1 id="Challenge">Challenge</h1>
+<h2 id="Baekjoon-Online-Judge"><a href="https://www.acmicpc.net" target="_blank" rel="external nofollow noopener noreferrer">Baekjoon Online Judge</a></h2>
+<ul>
+<li>None</li>
+<li>None</li>
+</ul>
+<h2 id="Cryptopals-Set-1-Basics">[Cryptopals] Set 1: Basics</h2>
+<ul>
+<li>Convert hex to base64</li>
+</ul>
+<!--
+- Fixed XOR
+- Single-byte XOR cipher
+- Detect single-character XOR
+- Implement repeating-key XOR
+- Break repeating-key XOR
+- AES in ECB mode
+- Detect AES in ECB mode
+-->
+<!--
+## [Cryptopals] Set 2: Block crypto
+
+- Implement PKCS#7 padding
+- Implement CBC mode
+- An ECB/CBC detection oracle
+- Byte-at-a-time ECB decryption (Simple)
+- ECB cut-and-paste
+- Byte-at-a-time ECB decryption (Harder)
+- PKCS#7 padding validation
+- CBC bitflipping attacks
+
+## [Cryptopals] Set 3: Block & stream crypto
+
+- The CBC padding oracle
+- Implement CTR, the stream cipher mode
+- Break fixed-nonce CTR mode using substitutions
+- Break fixed-nonce CTR statistically
+- Implement the MT19937 Mersenne Twister RNG
+- Crack an MT19937 seed
+- Clone an MT19937 RNG from its output
+- Create the MT19937 stream cipher and break it
+
+## [Cryptopals] Set 4: Stream crypto and randomness
+
+- Break "random access read/write" AES CTR
+- CTR bitflipping
+- Recover the key from CBC with IV=Key
+- Implement a SHA-1 keyed MAC
+- Break a SHA-1 keyed MAC using length extension
+- Break an MD4 keyed MAC using length extension
+- Implement and break HMAC-SHA1 with an artificial timing leak
+- Break HMAC-SHA1 with a slightly less artificial timing leak
+
+## [Cryptopals] Set 5: Diffie-Hellman and friends
+
+- Implement Diffie-Hellman
+- Implement a MITM key-fixing attack on Diffie-Hellman with parameter injection
+- Implement DH with negotiated groups, and break with malicious "g" parameters
+- Implement Secure Remote Password (SRP)
+- Break SRP with a zero key
+- Offline dictionary attack on simplified SRP
+- Implement RSA
+- Implement an E=3 RSA Broadcast attack
+
+## [Cryptopals] Set 6: RSA and DSA
+
+- Implement unpadded message recovery oracle
+- Bleichenbacher's e=3 RSA Attack
+- DSA key recovery from nonce
+- DSA nonce recovery from repeated nonce
+- DSA parameter tampering
+- RSA parity oracle
+- Bleichenbacher's PKCS 1.5 Padding Oracle (Simple Case)
+- Bleichenbacher's PKCS 1.5 Padding Oracle (Complete Case)
+
+## [Cryptopals] Set 7: Hashes
+
+- CBC-MAC Message Forgery
+- Hashing with CBC-MAC
+- Compression Ratio Side-Channel Attacks
+- Iterated Hash Function Multicollisions
+- Kelsey and Schneier's Expandable Messages
+- Kelsey and Kohno's Nostradamus Attack
+- MD4 Collisions
+- RC4 Single-Byte Biases
+-->
+<h1 id="Cature-the-Flag">Cature the Flag</h1>
+<h2 id="TGHACK20-Resolve">TGHACK20 Resolve</h2>
+<ul>
+<li><a href="/TGHACK20/n00b1-Number-Trouble/">[n00b1] Number Trouble</a></li>
+<li>None</li>
+</ul>
+<h1 id="None">None</h1>
+<h2 id="None-v2">None</h2>
+<ul>
+<li>None</li>
+<li>None</li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Home"><a href="/">Home</a></h1>
+<h2 id="Personal">Personal</h2>
+<ul>
+<li><a href="/personal/launch-a-new-blog">Launch a New blog in 2020</a></li>
+<li><a href="/personal/republic-of-korea-air-force">Republic of Korea Air Force</a></li>
+<li><a href="/personal/simple-blockchain-description/">Simple Blockchain Description</a></li>
+<li><a href="/personal/university-exhibition-2018">University Exhibition 2018</a></li>
+</ul>
+<h1 id="Challenge">Challenge</h1>
+<h2 id="Baekjoon-Online-Judge"><a href="https://www.acmicpc.net" target="_blank" rel="external nofollow noopener noreferrer">Baekjoon Online Judge</a></h2>
+<ul>
+<li>None</li>
+<li>None</li>
+</ul>
+<h2 id="Cryptopals-Set-1-Basics">[Cryptopals] Set 1: Basics</h2>
+<ul>
+<li>Convert hex to base64</li>
+</ul>
+<!--
+- Fixed XOR
+- Single-byte XOR cipher
+- Detect single-character XOR
+- Implement repeating-key XOR
+- Break repeating-key XOR
+- AES in ECB mode
+- Detect AES in ECB mode
+-->
+<!--
+## [Cryptopals] Set 2: Block crypto
+
+- Implement PKCS#7 padding
+- Implement CBC mode
+- An ECB/CBC detection oracle
+- Byte-at-a-time ECB decryption (Simple)
+- ECB cut-and-paste
+- Byte-at-a-time ECB decryption (Harder)
+- PKCS#7 padding validation
+- CBC bitflipping attacks
+
+## [Cryptopals] Set 3: Block & stream crypto
+
+- The CBC padding oracle
+- Implement CTR, the stream cipher mode
+- Break fixed-nonce CTR mode using substitutions
+- Break fixed-nonce CTR statistically
+- Implement the MT19937 Mersenne Twister RNG
+- Crack an MT19937 seed
+- Clone an MT19937 RNG from its output
+- Create the MT19937 stream cipher and break it
+
+## [Cryptopals] Set 4: Stream crypto and randomness
+
+- Break "random access read/write" AES CTR
+- CTR bitflipping
+- Recover the key from CBC with IV=Key
+- Implement a SHA-1 keyed MAC
+- Break a SHA-1 keyed MAC using length extension
+- Break an MD4 keyed MAC using length extension
+- Implement and break HMAC-SHA1 with an artificial timing leak
+- Break HMAC-SHA1 with a slightly less artificial timing leak
+
+## [Cryptopals] Set 5: Diffie-Hellman and friends
+
+- Implement Diffie-Hellman
+- Implement a MITM key-fixing attack on Diffie-Hellman with parameter injection
+- Implement DH with negotiated groups, and break with malicious "g" parameters
+- Implement Secure Remote Password (SRP)
+- Break SRP with a zero key
+- Offline dictionary attack on simplified SRP
+- Implement RSA
+- Implement an E=3 RSA Broadcast attack
+
+## [Cryptopals] Set 6: RSA and DSA
+
+- Implement unpadded message recovery oracle
+- Bleichenbacher's e=3 RSA Attack
+- DSA key recovery from nonce
+- DSA nonce recovery from repeated nonce
+- DSA parameter tampering
+- RSA parity oracle
+- Bleichenbacher's PKCS 1.5 Padding Oracle (Simple Case)
+- Bleichenbacher's PKCS 1.5 Padding Oracle (Complete Case)
+
+## [Cryptopals] Set 7: Hashes
+
+- CBC-MAC Message Forgery
+- Hashing with CBC-MAC
+- Compression Ratio Side-Channel Attacks
+- Iterated Hash Function Multicollisions
+- Kelsey and Schneier's Expandable Messages
+- Kelsey and Kohno's Nostradamus Attack
+- MD4 Collisions
+- RC4 Single-Byte Biases
+-->
+<h1 id="Cature-the-Flag">Cature the Flag</h1>
+<h2 id="TGHACK20-Resolve">TGHACK20 Resolve</h2>
+<ul>
+<li><a href="/TGHACK20/n00b1-Number-Trouble/">[n00b1] Number Trouble</a></li>
+<li>None</li>
+</ul>
+<h1 id="None">None</h1>
+<h2 id="None-v2">None</h2>
+<ul>
+<li>None</li>
+<li>None</li>
+</ul>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js" repo="habit20/habit20.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/avatar.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Habit20</div>
+      <div>2020-03-28</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

@@ -9,7 +9,7 @@
 
     <url>
         <loc>https://habit20.github.io/Home/</loc>
-        <lastmod>2020-04-14T11:06:41.925Z</lastmod>
+        <lastmod>2020-04-14T14:34:05.897Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,15 +17,47 @@
 
     <url>
         <loc>https://habit20.github.io/Menu/</loc>
-        <lastmod>2020-04-14T11:06:26.847Z</lastmod>
+        <lastmod>2020-04-14T14:31:35.029Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://habit20.github.io/TGHACK20/n00b2-Secret-Bases/</loc>
-        <lastmod>2020-04-14T11:05:51.486Z</lastmod>
+        <loc>https://habit20.github.io/personal/university-exhibition-2018/</loc>
+        <lastmod>2020-04-14T14:30:33.892Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://habit20.github.io/personal/simple-blockchain-description/</loc>
+        <lastmod>2020-04-14T14:30:29.716Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://habit20.github.io/personal/republic-of-korea-air-force/</loc>
+        <lastmod>2020-04-14T14:30:25.895Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://habit20.github.io/personal/launch-a-new-blog/</loc>
+        <lastmod>2020-04-14T14:30:18.720Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://habit20.github.io/TGHACK20/n00b3-Shifty-Science/</loc>
+        <lastmod>2020-04-14T14:30:04.946Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -33,7 +65,15 @@
 
     <url>
         <loc>https://habit20.github.io/TGHACK20/n00b1-Number-Trouble/</loc>
-        <lastmod>2020-04-13T08:54:04.701Z</lastmod>
+        <lastmod>2020-04-14T14:29:55.966Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://habit20.github.io/TGHACK20/n00b2-Secret-Bases/</loc>
+        <lastmod>2020-04-14T14:29:50.522Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -42,38 +82,6 @@
     <url>
         <loc>https://habit20.github.io/KNU-Banking-System-2/</loc>
         <lastmod>2020-04-07T08:05:15.126Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://habit20.github.io/personal/republic-of-korea-air-force/</loc>
-        <lastmod>2020-04-05T14:26:38.215Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://habit20.github.io/personal/launch-a-new-blog/</loc>
-        <lastmod>2020-03-29T16:50:46.682Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://habit20.github.io/personal/simple-blockchain-description/</loc>
-        <lastmod>2020-03-29T11:13:38.699Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://habit20.github.io/personal/university-exhibition-2018/</loc>
-        <lastmod>2020-03-29T11:13:06.930Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

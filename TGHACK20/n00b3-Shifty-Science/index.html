@@ -11,7 +11,7 @@
 
     <title>
         
-          [TGHACK20_n00b2] Secret Bases - Habit20
+          [TGHACK20_n00b3] Shifty Science - Habit20
         
     </title>
 
@@ -235,25 +235,24 @@ function sidebar_toggle() {
         </div>
         <div class="book-content">
           <div class="book-post">
-  <h2 id="TGHACK20-n00b2-Secret-Bases">[TGHACK20_n00b2] Secret Bases</h2>
-<p><strong>We managed to extract this secret information from one of Mother’s 64 secret bases before we had to leave Earth.<br>
-Are you able to decode it?</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">VEcyMHt5b3VfY2FuX25ldmVyX2hhdmVfZW5vdWdoX3NlY3JldF9iYXNlc30&#x3D;</span><br></pre></td></tr></table></figure>
-<p>&quot;우리는 지구를 떠나야 하기 전 어머니들의 64개 비밀 정보 중 하나를 간신히 추출했다.</p>
-<p>해독할 수 있을까? 🧐🧐&quot;</p>
+  <h2 id="TGHACK20-n00b3-Shifty-Science">[TGHACK20_n00b3] Shifty Science</h2>
+<p><strong>This flag was tampered with by a shifty scientist. Can you get it back to normal?</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BO20&#123;xtmiam_lwvb_bzg_apqnba_tqsm_bpqa_ib_pwum&#125;</span><br></pre></td></tr></table></figure>
+<p>“이 플래그는 교활한 과학자가 조작한 것이다. 정상값으로 돌아갈 수 있겠어? 😎😎”</p>
 <h2 id="✔-Solution">✔ Solution</h2>
-<p><img src="CyberChef.png" alt></p>
-<p>위 암호값 패턴을 살펴보면 이퀄싸인(=)으로 끝나는 점을 확인할 수 있다. (Padding)</p>
-<p>이는 Base64 Encoding 전형적인 결과값(Output) 특징이므로 Decoding 해주면 된다.</p>
-<p><a href="https://habit20.github.io/CyberChef/">CyberChif Tool</a> 도구를 이용해 레시피 From Base64 로 손쉽게 플래그를 얻을 수 있다.</p>
-<p>Permission Denied … ? 🤣🤣</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TG20&#123;you_can_never_have_enough_secret_bases&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="✔-What-is-base64">✔ What is base64?</h2>
+<p>이 문제를 풀기 위해서는 <a href="https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%9D%B4%EC%82%AC%EB%A5%B4_%EC%95%94%ED%98%B8" target="_blank" rel="external nofollow noopener noreferrer">카이사르 고전암호</a>에 대한 지식을 지니고 있어야 한다.</p>
+<p>문제를 해결하기 위해 간단하게 설명하자면 알파벳 순서를 N칸씩 미뤘다고 생각하면 된다.</p>
+<p>간단한 예시로 문자열 “ABC” 카이사르 고전암호(3칸)를 적용하면 &quot;DEF&quot;로 치환된다.</p>
+<p>여기서 큰 문제는 과학자가 알파벳 N칸을 미뤘는데 도대체 얼마나 미뤘는지를 모른다.</p>
+<p><a href="https://habit20.github.io/CyberChef/">CyberChif Tool</a> 도구를 이용해 레시피 ROT13 으로 Amount 값을 하나씩 늘려보면서</p>
+<p>우리가 알아볼 수 있는 단어(TG20)를 계속 찾는 추측(Gussing) 방법 하나와</p>
+<p>Brute Forcing 코드를 작성해 단어(TG20)가 나올때까지 N값을 찾는 무차별 대입공격 등이 있다.</p>
+<p>이 문제는 큰 N값을 요구하지 않기 때문에 18칸에서 플래그를 손쉽게 얻을 수 있다. 😆😆</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TG20&#123;please_dont_try_shifts_like_this_at_home&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="✔-Notes">✔ Notes</h2>
 <ul>
-<li>Base64 : String → ASCII Binary → 6Bit Cut → Encode</li>
-<li>6Bit Cut : 6비트씩 묶어서 임의의 64개 데이터 값 참조후 치환</li>
-<li>Padding : 6비트씩 묶고 남는 비트 이퀄싸인 (=)</li>
-<li>64개 데이터 : Standard (RFC 4648) → A-Za-z0-9+/= 등등…</li>
+<li>Bruto Forcing : 키값 등을 모른다면 프로그래밍을 통해 조건과 범위를 정해 무차별 대입공격.</li>
+<li>ROT13 : Rotate By 13, 알파벳 13글자씩 밀어서 만들었다. 유사 개념 → ROT47</li>
 </ul>
 <p>Rmx.</p>
 
@@ -296,7 +295,7 @@ Are you able to decode it?</strong></p>
     <!-- Author title -->
     <div class="author-title">
       <div>Habit20</div>
-      <div>2020-04-13</div>
+      <div>2020-04-14</div>
     </div>
   </div>
 

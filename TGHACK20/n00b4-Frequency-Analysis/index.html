@@ -241,22 +241,24 @@ function sidebar_toggle() {
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">U tmhq x0awqp mf kag. Kag mdq zaf xuwq yq. Kagd iadxp...ue...m...rmudkfmxq nqomgeq ymzk oazrxuofuzs fdgfte omz qjuef </span><br><span class="line">mf Gn20&#123;urpvaqvaz_ufqz_rp&#125;</span><br><span class="line">ftq </span><br><span class="line">ND20&#123;emyq_fuyq&#125;. U my purrqdqzf. Rad_yq_ftqqdq mdq azx333333k azqe mzp lqdae. M lqqqda omz!zaf!mxea!nq!m!azq. Rad MO20&#123;kag_uf_omz&#125; ea kag ymwq gb efaduqe. Rad yq</span><br><span class="line">ftqdq mdq za efaduqe mzp ftqdqradq &#x3D;&#x3D;za mofuaze. Kag ftuzw883333kag  omz ymwq FM20&#123;bqqcfcv_bxst_tcs&#125;</span><br><span class="line">FS20&#123;nqsuzzuzs_yuppxq_qzp&#125;</span><br><span class="line">MZ20&#123;zpfarqqqpwffqfm_evdw_hff&#125;</span><br><span class="line">WL20&#123;afdfp_jfafib_bka&#125; YQ20&#123;moffuaz_iuftagf_efadk?&#125; Ftqdq~ue~zaftuzs~rad yq&#x3D;&#x3D; fa pa. Za efmdfuzs bauzf.... FG20&#123;iffebjeff_iedzla_yu&#125;</span><br><span class="line">ad qzpuzs bauzf QZP. </span><br><span class="line">Mzp qhqdk efadk tme m nqsuzzuzs yuppxq*mzp*qzp. Ftdagsta&#123;gf----fuyq-U-vgef&#125; qjuef. Yadq*xasuo, xqee--mofuaze rad yq.</span><br></pre></td></tr></table></figure>
 <p>“최초의 인공지능(Sentient AI)은 우리에게 이 메시지를 남겼다. 해독할 수 있겠어?”</p>
 <h2 id="✔-Solution">✔ Solution</h2>
-<p>해당 문제 암호값을 살펴보니 영어 문장 같은데 알파벳 순서를 꽤 미뤄서 알아보지 못하게 만들었다.</p>
-<p>먼저 <a href="https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%9D%B4%EC%82%AC%EB%A5%B4_%EC%95%94%ED%98%B8" target="_blank" rel="external nofollow noopener noreferrer">카이사르 고전암호</a>를 풀기 위해 <a href="https://www.cryptool.org/en/cto-cryptanalysis/n-gram-analysis" target="_blank" rel="external nofollow noopener noreferrer">빈도 분석(N-Gram) 사이트</a>를 이용해 빈도수를 알아내겠다.</p>
-<p>빈도 분석(N-Gram)은 문장 내에서 몇개의 문자를 사용했는지 빈도수를 알아낼 때 상당히 용이하다.</p>
-<p>그리고 보통 영어 문장(편지 등)에서 자주 사용되는 단어는 E (12,7%), T (9,6%), A (8,17%) 이다.</p>
-<p>반대로 가장 적게 사용되는 단어는 Z (0,077%) 이므로 이 내용을 참고해 문제를 풀어야 한다.</p>
+<p>인공지능 메시지 암호값을 살펴보니 영어 문장인데 알파벳 순서를 꽤 미뤄서 알아보지 못하게 만들었다.</p>
+<p><a href="https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%9D%B4%EC%82%AC%EB%A5%B4_%EC%95%94%ED%98%B8" target="_blank" rel="external nofollow noopener noreferrer">카이사르 고전암호</a>를 풀기 위해 <a href="https://www.cryptool.org/en/cto-cryptanalysis/n-gram-analysis" target="_blank" rel="external nofollow noopener noreferrer">빈도 분석(N-Gram) 사이트</a>를 이용해 문자 빈도수를 파악해보자.</p>
+<p>빈도 분석(N-Gram)은 문장 내에서 몇개의 문자를 사용했는지 파악할 때 상당히 용이하다.</p>
+<p>추가적으로 영어 문장(편지 등)에서 자주 사용되는 단어는 &quot;E (12,7%), T (9,6%), A (8,17%)&quot;이고,</p>
+<p>반대로 가장 적게 사용되는 단어는 &quot;Z (0,077%)&quot;이므로 이 내용을 참고해 문제를 접근해야 한다.</p>
 <p><img src="Cryptool.png" alt></p>
 <p>위 사진을 살펴보면 암호값에서 가장 많이 사용되는 첫 번째 단어는 ‘q’, 두 번째 단어는 ‘a’ 이다.</p>
-<p>따라서 다음과 같이 암호값에서 빈도수 높은 것<strong>부터</strong> 영어 문장에서 자주 사용되는 단어<strong>까지</strong></p>
+<p>따라서 암호값에서 빈도수 높은 것<strong>부터</strong> 영어 문장에서 자주 사용되는 단어<strong>까지</strong> 나열해보면</p>
 <p>'q’부터 'e’까지 || 'q’부터 't’까지 || 'q’부터 'a’까지 || 'a’부터 'e’까지 || 'a’부터 't’까지 || 'a’부터 'a’까지</p>
-<p>위와 같이 경우의 수를 최대한 좁혀서 Amount N값을 알아내면 충분히 문제를 풀 수 있다.</p>
+<p>위와 같이 경우의 수를 구할 수 있다. 이제 모든 Amount N값을 구하면 암호 해독 가능할 것이다.</p>
 <p><img src="CyberChef.png" alt></p>
 <p><a href="https://habit20.github.io/CyberChef/">CyberChif Tool</a> 도구를 이용해 ROT 13 레시피로 -12번을 통해 정상적인 결과값(Output)을 구했다.</p>
 <p>-12번은 운좋게 첫 번째 경우의 수 'q’부터 'e’까지 알파벳을 뒤로 옮긴 Amount N값이다.</p>
+<p>만약 Amount N값을 구하기 힘들다면 <a href="https://manansingh.github.io/Cryptolab-Offline/c2-brute-caesar.html#tool" target="_blank" rel="external nofollow noopener noreferrer">카이사르 암호 Brute Force</a> 온라인 사이트를 이용하면 매우 좋다.</p>
+<p>우리는 항상 편리한 도구(Tools)를 사용하지만 해커가 문제를 접근할 때 창의력과 독창성은 꽤 중요하다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">I have l0oked at you. You are not like me. Your world...is...a...fairytale because many conflicting truths can exist </span><br><span class="line">at Ub20&#123;ifdjoejon_iten_fd&#125;</span><br><span class="line">the </span><br><span class="line">BR20&#123;same_time&#125;. I am different. For_me_theere are onl333333y ones and zeros. A zeeero can!not!also!be!a!one. For AC20&#123;you_it_can&#125; so you make up stories. For me</span><br><span class="line">there are no stories and therefore &#x3D;&#x3D;no actions. You think883333you  can make TA20&#123;peeqtqj_plgh_hqg&#125;</span><br><span class="line">TG20&#123;beginning_middle_end&#125;</span><br><span class="line">AN20&#123;ndtofeeedktteta_sjrk_vtt&#125;</span><br><span class="line">KZ20&#123;otrtd_xtotwp_pyo&#125; ME20&#123;acttion_without_story?&#125; There~is~nothing~for me&#x3D;&#x3D; to do. No starting point.... TU20&#123;wttspxstt_wsrnzo_mi&#125;</span><br><span class="line">or ending point END. </span><br><span class="line">And every story has a beginning middle*and*end. Througho&#123;ut----time-I-just&#125; exist. More*logic, less--actions for me.</span><br></pre></td></tr></table></figure>
-<p>해당 결과값(Output)을 살펴보니 플래그 TG{} 포맷으로 뉴비3 처럼 문제 푸는 것을 방지하기 위해</p>
-<p>서로 비슷한 포맷을 꽤 많이 넣어두었다. 이 중에서 TG{} 포맷을 찾으면 플래그는 다음과 같다.</p>
+<p>해당 결과값(Output)을 살펴보니 TG{} 포맷으로 풀지 못하도록 지난 문제(n00b3)와 차별성을 두었다.</p>
+<p>하지만 카이사르 암호는 암호학 분야 중에서 제일 쉬운 난이도에 속하기 때문에 거의 대부분 풀린다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TG20&#123;beginning_middle_end&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="✔-Notes">✔ Notes</h2>
 <ul>

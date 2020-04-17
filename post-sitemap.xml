@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://habit20.github.io/Menu/</loc>
+        <lastmod>2020-04-17T02:43:38.717Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://habit20.github.io/Home/</loc>
+        <lastmod>2020-04-17T02:43:02.421Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://habit20.github.io/TGHACK20/n00b5-Mega-Shifting/</loc>
         <lastmod>2020-04-17T02:41:36.687Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,22 +34,6 @@
     <url>
         <loc>https://habit20.github.io/TGHACK20/n00b6-Is-This-The-One-Or-Zero/</loc>
         <lastmod>2020-04-17T02:35:38.350Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://habit20.github.io/Home/</loc>
-        <lastmod>2020-04-16T10:22:23.098Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://habit20.github.io/Menu/</loc>
-        <lastmod>2020-04-16T10:21:39.712Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

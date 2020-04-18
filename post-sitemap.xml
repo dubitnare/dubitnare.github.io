@@ -8,16 +8,24 @@
     </url>
 
     <url>
-        <loc>https://habit20.github.io/Menu/</loc>
-        <lastmod>2020-04-17T02:52:58.480Z</lastmod>
+        <loc>https://habit20.github.io/Home/</loc>
+        <lastmod>2020-04-18T11:44:08.685Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://habit20.github.io/Home/</loc>
-        <lastmod>2020-04-17T02:43:02.421Z</lastmod>
+        <loc>https://habit20.github.io/Menu/</loc>
+        <lastmod>2020-04-18T11:43:27.385Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://habit20.github.io/TGHACK20/The-Message/</loc>
+        <lastmod>2020-04-18T11:42:37.859Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

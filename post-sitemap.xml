@@ -8,8 +8,32 @@
     </url>
 
     <url>
+        <loc>https://habit20.github.io/Bucket-List/</loc>
+        <lastmod>2020-04-23T15:31:10.810Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://habit20.github.io/Menu/</loc>
+        <lastmod>2020-04-23T15:30:43.741Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://habit20.github.io/TGHACK20/The-Message/</loc>
-        <lastmod>2020-04-18T17:48:12.241Z</lastmod>
+        <lastmod>2020-04-22T17:50:16.154Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://habit20.github.io/TGHACK20/Ransomware-Part-1/</loc>
+        <lastmod>2020-04-19T13:57:13.964Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -26,14 +50,6 @@
     <url>
         <loc>https://habit20.github.io/Home/</loc>
         <lastmod>2020-04-18T11:44:08.685Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://habit20.github.io/Menu/</loc>
-        <lastmod>2020-04-18T11:43:27.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

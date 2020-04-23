@@ -11,7 +11,7 @@
 
     <title>
         
-          Habit20
+          [TGHACK20] Ransomware Part 1 - Habit20
         
     </title>
 
@@ -240,7 +240,32 @@ function sidebar_toggle() {
         </div>
         <div class="book-content">
           <div class="book-post">
-  
+  <h2 id="TGHACK20-Ransomware-Part-1">[TGHACK20] Ransomware Part 1</h2>
+<p><code>※ 이 게시물은 &quot;TGHACK20&quot;에서 공식 발표된 문제풀이 보고서(Write-Up)를 참고해 작성했습니다.</code></p>
+<h2 id="✔-Description">✔ Description</h2>
+<p>Someone managed to get themselves infected and had ransomware running on their computer, encrypting a directory containing some important files before deleting itself from the system. We were not able to extract the actual ransomware binary, only an object file left behind in the /tmp directory. Luckily, we were capturing the current network traffic.</p>
+<blockquote>
+<p>누군가 랜섬웨어를 실행하여 자신의 컴퓨터를 감염시켰고 그로 인해 중요한 파일이 포함 된 디렉토리가 암호화 되었다. 우리는 실제 랜섬웨어 바이너리를 추출할 수 없었으며 /tmp 디렉토리에 남아있는 오브젝트 파일만 추출했다. 다행히 운 좋게 네트워크 트래픽은 캡처하고 있었다.</p>
+</blockquote>
+<p>Are you able to decrypt the encrypted files for us?</p>
+<blockquote>
+<p>우리를 위해 암호화된 파일을 해독해줄 수 있을까?</p>
+</blockquote>
+<p><strong>WARNING: The ransomware object file is part of actual ransomware which WILL encrypt and delete your files if linked and executed, which without the key are lost!</strong></p>
+<blockquote>
+<p><strong>경고 : 랜섬웨어 오브젝트 파일은 실제 랜섬웨어 일부입니다. 만약 키값 없이 실행 및 연결시 당신의 파일은 암호화되거나 삭제될 수 있다.</strong></p>
+</blockquote>
+<p>Relevant files:</p>
+<p><a href="ransomware.o">Ransomware object file</a><br>
+<a href="ransomed_files.zip">Ransomed files</a><br>
+<a href="network_capture.pcapng">Network capture</a></p>
+<h2 id="✔-Solution">✔ Solution</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TG20&#123;luckily_you_managed_to_recover_the_key&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="✔-Notes">✔ Notes</h2>
+<ul>
+<li><a href="https://github.com/tghack/tg20hack/blob/master/crypto/ransomware_part_1/writeup.md" target="_blank" rel="external nofollow noopener noreferrer">TGHACK20 Ransomware Part 1 Write-up</a></li>
+</ul>
+<div style="text-align: right">Rmx.</div>
 </div>
 
 
@@ -280,7 +305,7 @@ function sidebar_toggle() {
     <!-- Author title -->
     <div class="author-title">
       <div>Habit20</div>
-      <div></div>
+      <div>2020-04-19</div>
     </div>
   </div>
 
